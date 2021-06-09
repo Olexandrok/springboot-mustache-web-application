@@ -16,6 +16,10 @@ public class LoginController {
     @Autowired
     private UserRepository userRepository;
 
+    @GetMapping("/")
+    public String red(){
+        return "redirect:/login";
+    }
     @GetMapping("/login")
     public String login(){
 
